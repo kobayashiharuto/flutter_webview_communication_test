@@ -9,10 +9,14 @@
         function sendMessage(message) {
             Print.postMessage(message);
         }
+        function sendCampaign() {
+            group_2over_campaign_1.postMessage();
+        }
     </script>
 </head>
 <body>
     <h1>Flutter Webview Communication Test</h1>
     <button type="button" onclick="sendMessage('purchase/card')">CLICK!</button>
+    <button type="button" onclick="sendCampaign()">キャンペーン</button>
 </body>
 </html>
