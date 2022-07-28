@@ -9,14 +9,18 @@
         function sendMessage(message) {
             Print.postMessage(message);
         }
-        function sendCampaign() {
+        function sendGroupCampaign() {
             group_2over_campaign_1.postMessage('');
+        }
+        function sendShareCampaign() {
+            group_share_campaign.postMessage('');
         }
     </script>
 </head>
 <body>
     <h1>Flutter Webview Communication Test</h1>
     <button type="button" onclick="sendMessage('purchase/card')">CLICK!</button>
-    <button type="button" onclick="sendCampaign()">キャンペーン!</button>
+    <button type="button" onclick="sendGroupCampaign()">キャンペーン1!</button>
+    <button type="button" onclick="sendShareCampaign()">キャンペーン2!</button>
 </body>
 </html>
